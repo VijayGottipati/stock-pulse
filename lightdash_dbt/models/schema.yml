@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: stock_health
+    description: Current stock, velocity and reorder signals by SKU.
+    columns:
+      - name: sku_code
+        description: SKU identifier.
+      - name: current_stock
+        description: On-hand units.
+      - name: incoming_stock
+        description: Units already on order.
+      - name: velocity_7day
+        description: Average daily units sold in the last 7 days.
+      - name: days_remaining
+        description: Estimated days of stock remaining.
+      - name: anomaly_ratio
+        description: Velocity ratio versus same period last year.
+
+  - name: po_timeline
+    description: Purchase order timeline and order reasoning.
+    columns:
+      - name: po_number
+      - name: sku_code
+      - name: supplier_name
+      - name: qty_ordered
+      - name: status
+      - name: ordered_at
+      - name: predicted_arrival_date
+      - name: actual_arrival_date
+
+  - name: lead_time_accuracy
+    description: Supplier lead-time prediction accuracy.
+    columns:
+      - name: supplier_name
+      - name: deliveries_scored
+      - name: avg_abs_arrival_error_days
+      - name: on_time_rate
+
+  - name: stockpulse_kpis
+    description: Pipeline KPI summary for outcomes and loss indicators.
+    columns:
+      - name: as_of_date
+      - name: pass_count
+      - name: partial_count
+      - name: fail_count
+      - name: total_stockout_days
+      - name: total_waste_units

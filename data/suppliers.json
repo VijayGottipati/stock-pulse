@@ -1,0 +1,14 @@
+[
+  {
+    "supplier_code": "SUP-A",
+    "name": "Supplier A",
+    "predicted_lead_days": 9,
+    "reliability_score": 0.92
+  },
+  {
+    "supplier_code": "SUP-B",
+    "name": "Supplier B",
+    "predicted_lead_days": 7,
+    "reliability_score": 0.84
+  }
+]

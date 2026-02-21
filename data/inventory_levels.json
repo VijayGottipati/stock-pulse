@@ -1,0 +1,6 @@
+[
+  { "sku_code": "SKU-0001", "current_stock": 250, "incoming_stock": 0, "safety_buffer_days": 2 },
+  { "sku_code": "SKU-0002", "current_stock": 160, "incoming_stock": 0, "safety_buffer_days": 2 },
+  { "sku_code": "SKU-0003", "current_stock": 120, "incoming_stock": 0, "safety_buffer_days": 3 },
+  { "sku_code": "SKU-0004", "current_stock": 90, "incoming_stock": 0, "safety_buffer_days": 3 }
+]

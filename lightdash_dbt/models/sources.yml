@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stockpulse_raw
+    schema: public
+    tables:
+      - name: vw_stock_health
+      - name: vw_po_timeline
+      - name: vw_lead_time_accuracy
+      - name: vw_stockpulse_kpis

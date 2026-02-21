@@ -1,0 +1,16 @@
+{
+  "name": "stockpulse-supabase-loader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StockPulse SQL + Supabase data push script",
+  "main": "scripts/stockpulse_sync.js",
+  "scripts": {
+    "sync": "node scripts/stockpulse_sync.js",
+    "sync:hourly": "node scripts/hourly_decide_act.js",
+    "sync:learn": "node scripts/delivery_learn.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "dotenv": "^17.2.3"
+  }
+}

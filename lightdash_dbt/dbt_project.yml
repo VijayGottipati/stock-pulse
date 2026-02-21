@@ -1,0 +1,11 @@
+name: stockpulse_lightdash
+version: 1.0.0
+config-version: 2
+
+profile: stockpulse_lightdash
+
+model-paths: ["models"]
+
+models:
+  stockpulse_lightdash:
+    +materialized: view
